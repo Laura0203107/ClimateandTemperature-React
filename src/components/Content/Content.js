@@ -16,14 +16,13 @@ export default function Content() {
                         <h2>
                            ¿Quienes somos?
                         </h2>
-                        <p>El nombre de la empresa Climate Disclosure App El programa
-                            pretende ofrecer toda la información que pueda ser de interés sobre temas
+                        <p>El nombre de la empresa Climate and Temperature, Es un programa que
+                            pretende ofrecer toda la información que pueda ser de interés en temas
                             climatológicos de las ciudades de Colombia.
                         </p>
                         <p>
-                            La plataforma de Climate Disclosure permite exponer y dar seguimiento a los
-                            principales
-                            eventos sobre cambio climático en la región y el mundo; el desarrollo de iniciativas
+                            La plataforma de Climate and Temperature permite exponer y dar seguimiento a los
+                            principales eventos sobre cambio climático en la región y el mundo; el desarrollo de iniciativas
                             y herramientas periodísticas; y la generación, difusión e intercambio de información
                             sobre cambio climático en América Latina y el Caribe.
                         </p>
@@ -41,12 +40,19 @@ export default function Content() {
                 <div className='column'>
                     <div className='green-column'>
                         <h2>Objetivo</h2>
-
                         <p>
-                            El nombre de la empresa Climate-disclosure-app El programa
-                            pretende ofrecer toda la información que pueda ser de interés sobre temas
+                            El nombre de la empresa Climate and Temperature, Es un programa con el fin de 
+                            ofrecer toda la información que pueda ser de interés sobre temas
                             climatológicos de las ciudades de Colombia.
                         </p>
+
+                        <h2>Objetivo</h2>
+                        <p>
+                            El nombre de la empresa Climate and Temperature, Es un programa con el fin de 
+                            ofrecer toda la información que pueda ser de interés sobre temas
+                            climatológicos de las ciudades de Colombia.
+                        </p>
+                       
                     </div>
                 </div>
             </div>

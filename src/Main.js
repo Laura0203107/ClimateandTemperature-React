@@ -5,6 +5,8 @@ import Formulario from './components/Formulario/Formulario'
 import Consulta from './components/Consulta/Consulta'
 import Infor from './components/Infor/Infor'
 
+
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 import {faHome} from "@fortawesome/free-solid-svg-icons";
@@ -17,12 +19,14 @@ const Main = () => (
    
   <Tabs>
     <TabList>
-     <Tab><FontAwesomeIcon icon={faHome}/></Tab>
+      
+      <Tab><FontAwesomeIcon icon={faHome}/></Tab>
       <Tab><FontAwesomeIcon icon={faFlipboard}/></Tab>
       <Tab><FontAwesomeIcon icon={faChartBar}/></Tab> 
       <Tab><FontAwesomeIcon icon={faInfoCircle}/></Tab>
     
     </TabList>
+
 
     <TabPanel>
         <Content/>
@@ -37,6 +41,8 @@ const Main = () => (
         <Infor/>
     </TabPanel>
   </Tabs>
+
+  
 );
 
 export default Main;

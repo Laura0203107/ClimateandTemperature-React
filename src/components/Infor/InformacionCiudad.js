@@ -20,7 +20,7 @@ const _InformacionCiudad = ({ city }) => {
                     </li>
                     <li class="table-row">
 
-                        <div className="col">Temperatura</div>
+                        <div className="col">Temperatura Actual</div>
                         <div className="col d-flex">{convertir(city.main.temp)}°c {'\t'}
                             {convertir(city.main.temp) > 20 && (<Emoji>🔥</Emoji>)}
                             {convertir(city.main.temp) < 13.5 && (<Emoji>🧊</Emoji>)}
@@ -29,31 +29,28 @@ const _InformacionCiudad = ({ city }) => {
 
                     </li>
                     <li class="table-row">
-                        <div className="col d-flex">temp_min</div>
+                        <div className="col d-flex">Temperatura Minima </div>
                         <div className="col d-flex">{convertir(city.main.temp_min)}<Emoji>❄️</Emoji></div>
                     </li>
                     <li class="table-row">
-                        <div className="col d-flex">temp_max</div>
+                        <div className="col d-flex">Temperatura Maxima</div>
                         <div className="col d-flex">{convertir(city.main.temp_max)} <Emoji>🌡️</Emoji></div>
                     </li>
                     <li class="table-row">
-                        <div className="col d-flex">Humidity</div>
+                        <div className="col d-flex">Humedad</div>
                         <div className="col d-flex">{city.main.humidity}% <Emoji>💧</Emoji></div>
                     </li>
                     <li class="table-row">
                         <div className="col d-flex">Presion</div>
                         <div className="col d-flex">{city.main.pressure} <Emoji>🌬️</Emoji> </div>
                     </li>
-                  
-
                 </ul>
             </div>
         </div>
     ) : (
-        <h1>selecciona una ciudad para ver la info</h1>
+        <h1 className="font-weight-light text-center">Selecciona Tu ciudad para conocer mas informacion.</h1>
     )
 }
-
 const mapStateToProps = (state) => {
     console.log("🚀 ~ file: InformacionCiudad.js ~ line 52 ~ mapStateToProps ~ state", state)
     const { citiesReducer } = state

@@ -7,7 +7,6 @@ const servidor = ` https://api.openweathermap.org/data/2.5/weather?appid=${id}`;
 const headers = {
     headers: {
         'Content-Type': 'application/json'
-
     }
 }
 
@@ -20,11 +19,9 @@ export const cargarCiudad = (nombreCiudad = '') => async dispatch => {
             type: LOAD_CITY,
             payload: res.data
         })
-
     } catch (error) {
         dispatch({
             type: ERROR
         });
     }
-
 }
