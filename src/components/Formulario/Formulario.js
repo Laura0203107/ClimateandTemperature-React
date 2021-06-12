@@ -76,6 +76,9 @@ function Formulario() {
                             <option>Santa Marta</option>
                             <option>Florencia</option>
                             <option>Yopal</option>
+                            <option>Cartago</option>
+                            <option>Villavicencio</option>
+                            <option>Armenia</option>
                         </select>
                     </div>
                 </div>
