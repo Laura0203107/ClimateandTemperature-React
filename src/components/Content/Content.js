@@ -46,11 +46,21 @@ export default function Content() {
                             climatológicos de las ciudades de Colombia.
                         </p>
 
-                        <h2>Objetivo</h2>
+                        <h3>Cambios Climaticos</h3>
                         <p>
-                            El nombre de la empresa Climate and Temperature, Es un programa con el fin de 
-                            ofrecer toda la información que pueda ser de interés sobre temas
-                            climatológicos de las ciudades de Colombia.
+                            Los cambios climáticos han existido desde el inicio de la historia de la Tierra, 
+                            han sido graduales o abruptos y se han debido a causas diversas, como las relacionadas 
+                            con los cambios en los parámetros orbitales, variaciones de la radiación solar, la deriva 
+                            continental, periodos de vulcanismo intenso, procesos bióticos o impactos de meteoritos. 
+                            El cambio climático actual es antropogénico y se relaciona principalmente con la intensificación 
+                            del efecto invernadero debido a las emisiones industriales procedentes de la quema de combustibles fósiles.
+                        </p>
+                        <h3>¿Qué importancia para la evolución humana?</h3>
+                        <p>
+                            El clima es dinámico; va cambiando a lo largo de la historia de la tierra. El clima ha cambiado mucho durante 
+                            el periodo de tiempo de la evolución humana. A medida que se enfría el clima, las personas aprenden a cazar ya 
+                            que las plantas se vuelven escasas en invierno. Para una mejor caza se requieren mejores herramientas. Mejores 
+                            herramientas incentivaron la evolución de la cultura.
                         </p>
                        
                     </div>

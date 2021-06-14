@@ -1,24 +1,23 @@
-
 import React, { useState, useEffect } from 'react';
 import '../../css/styles.css';
- 
-function Formulario() {
 
-    //Llamado
-    const [data, setData] = useState({ hits: [] });
- 
-  useEffect(async () => {
-    const fetchData = async()=>{
-      const url = 'http://127.0.0.1/4000';
-      const res = await fetch(url);
-      const result = await res.json();
-      setData(result);
-      console.log('Hola mundo')
-    }
-    fetchData();
-  },[data]);
+function conexion1(){
+    ("entro a la base de datos");
+    alert("<?php $conexion = pg_connect('host=climateandtemperature-server.postgres.database.azure.com dbname=postgres user=Administrador@climateandtemperature-server password=Ng45*L66');")
+    var Temperatura = document.getElementById("inputTemperatura").value;
+    var Humedad = document.getElementById("inputHumedad").value;
+    var Pais = document.getElementById("FormControlPais").value;
+    var Ciudad = document.getElementById("FormControlCiudad").value;
+    var Codigo = document.getElementById("inputCodigo").value;
+    var Nombre = "Bogota";
 
+    alert("<?php pg_query($conexion, 'INSERT INTO public.'Ciudades'(idciudad, codigopostal, nombre, temperatura, humedad) VALUES (?, ",Codigo,", ",Nombre,", ",Temperatura,", ",Humedad,");' ?>");
     
+    /*var r = [Temperatura,Humedad, Pais, Ciudad, Codigo];
+    return r;*/
+}
+
+function Formulario() {    
   return (
         <div className="container page-section">
         <br></br>
@@ -62,7 +61,7 @@ function Formulario() {
                     </div>
                     <div className="col">
                         <select className="form-control" id="FormControlCiudad">
-                            <option>Seleccione Ciudad</option>
+                            <option>Nombre</option>
                             <option>Bogota</option>
                             <option>Medellin</option>
                             <option>Bucaramanga</option>
@@ -83,10 +82,8 @@ function Formulario() {
                     </div>
                 </div>
                 <hr className="text-center" style={{width: '750px' }}></hr>
-                <a className="btn btn-secondary" href="#">Enviar</a>
+                <botton className="btn btn-secondary" onclick="conexion1()">Guardar</botton>
             </div>
-            
-
         </div>
         <br></br>
         <br></br>
