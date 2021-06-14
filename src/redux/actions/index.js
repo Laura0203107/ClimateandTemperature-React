@@ -2,7 +2,7 @@ import axios from 'axios';
 import { LOAD_CITY, ERROR } from './types';
 
 const id = `8b4a1cfe7b37f251dcce8b232975fd6d`;
-const servidor = ` https://api.openweathermap.org/data/2.5/weather?appid=${id}`;
+const servidor = `https://api.openweathermap.org/data/2.5/weather?appid=${id}`;
 
 const headers = {
     headers: {
